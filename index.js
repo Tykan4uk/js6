@@ -95,7 +95,7 @@ function checkArray() {
 };
 checkArray();
 
-function createCar(model, color, age, speed, gasTank, started) {
+function Car(model, color, age, speed, gasTank, started) {
   const obj = {
     model: model,
     color: color,
@@ -183,7 +183,7 @@ function createCar(model, color, age, speed, gasTank, started) {
   return obj;
 }
 
-const obj = createCar("Tesla", "Red", 5, 0, 11, false);
+const obj = new Car("Tesla", "Red", 5, 0, 11, false);
 
 obj.startEngine();
 
